@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: placeholder
+    description: placeholder
+    columns:
+      - name: placeholder
+        tests:
+          - not_null
+          - unique

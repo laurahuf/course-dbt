@@ -1,17 +1,33 @@
 version: 2
 
 models:
-  - name: stg_addresses
-    description: User address info 
-  - name: stg_events
-    description: user behavior on website
-  - name: stg_order_items
+  - name: stg_postgres__addresses
+    description: contains addresses of each user in users table
+    columns:
+      - name: address_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_postgres__events
+    description: contains logs of the events created by users of Greenery i.e check out, page_view, add_to_cart
+    columns:
+       - name: event_id
+         tests:
+          - not_null
+          - unique
+
+  - name: stg_postgres__order_items
     description: products and quantity for each order
-  - name: stg_orders
+
+  - name: stg_postgres__orders
     description: order info
-  - name: stg_products
+
+  - name: stg_postgres__products
     description: List of products, price, and inventory
-  - name: stg_promos
+
+  - name: stg_postgres__promos
     description: List of promos and their status
-  - name: stg_users
+
+  - name: stg_postgres__users
     description: user contact info and when each order is created
