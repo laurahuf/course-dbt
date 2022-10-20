@@ -18,7 +18,7 @@ WITH events_source AS (
     page_url AS event_page_url,
     created_at AS event_created_at_utc,
     order_id AS event_order_uuid,
-    product_id AS event_product_id
+    product_id AS event_product_uuid
   FROM events_source
 )
 

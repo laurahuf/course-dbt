@@ -1,10 +1,9 @@
 version: 2
 
 models:
-  - name: placeholder2
-    description: placeholder2
+  - name: fct_user_order
+    description: user order stats
     columns:
-      - name: placeholder2
+      - name: users.user_uuid
         tests:
           - not_null
-          - unique

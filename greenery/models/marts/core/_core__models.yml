@@ -1,10 +1,15 @@
 version: 2
 
 models:
-  - name: placeholder
-    description: placeholder
+  - name: dim_users
+    description: User name,contact, and address info
     columns:
-      - name: placeholder
+      - name: user_uuid
         tests:
           - not_null
-          - unique
+  - name: fct_orders
+    description: order and promo info joined
+    columns:
+      - name: order_uuid
+        tests:
+          - not_null       
