@@ -4,6 +4,6 @@ models:
   - name: fct_user_order
     description: user order stats
     columns:
-      - name: users.user_uuid
+      - name: user_uuid
         tests:
           - not_null

@@ -1,5 +1,7 @@
 version: 2
 
 models:
-  - name: dim_products
+  - name: int_product_events
     description: Product events broken out by event_type
+  - name: fct_products
+    description: ""

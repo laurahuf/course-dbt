@@ -40,3 +40,5 @@ final AS (
   LEFT JOIN user_order_stats uos ON u.user_uuid = uos.order_user_uuid
 
 )
+
+SELECT * FROM final
